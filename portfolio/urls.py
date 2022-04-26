@@ -4,8 +4,8 @@ from rest_framework import routers
 from . import views
 
 router = routers.DefaultRouter()
-router.register('natives', views.NativeViewSet, basename='natives')
-router.register('cohort', views.CohortViewSet, basename='cohort')
+router.register('project', views.ProjectViewSet, basename='project')
+
 
 urlpatterns = [
     path('', include(router.urls)),

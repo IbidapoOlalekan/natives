@@ -4,8 +4,8 @@ from rest_framework.decorators import action
 from rest_framework.response import Response
 
 
-class CohortViewSet():
-    pass
+class CohortViewSet(viewsets.ModelViewSet):
+    ...
 
 
 class NativeViewSet(viewsets.ModelViewSet):
